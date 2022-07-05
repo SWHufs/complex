@@ -30,6 +30,9 @@ class Complex:
         c.im = self.im + c1.im
         return c
         
+    def __sub__(self, c):
+        return self.subtract(c)
+        
     def __mul__(self, c):
         return self.multiply(c)
 
@@ -38,11 +41,11 @@ class Complex:
 
 c1 = Complex(1, 2)
 c2 = Complex(2, 3)
-print(c1 + c2)
+print(c1+c2)
     
 c1 = Complex(1, 2)
-c2 = Complex(2,3)
-print(c2.subtract(c1))
+c2 = Complex(2, 3)
+print(c2-c1)
         
 c1 = Complex(1, 2)
 c2 = Complex(2,3)
